@@ -28,3 +28,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+.vs/Supercharger/VuforiaTest3.Editor/codemap.dat
+.vs/Supercharger/VuforiaTest3.Editor/global_history.dat
+.vs/Supercharger/VuforiaTest3.Editor/workbench.dat
+.vs/Supercharger/VuforiaTest3/codemap.dat
+.vs/Supercharger/VuforiaTest3/global_history.dat
+.vs/Supercharger/VuforiaTest3/workbench.dat
