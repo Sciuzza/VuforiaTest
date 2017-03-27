@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: Adp2VM3/////AAAAGcfUU2tLik1qorwDAAatRTo6/8DQMOIC8D6blTWiDPcLNiHjfyaOJfYv5dIpEZOmgjCq5xl0NUj92FeakfdzWv0Si1ql7xMR1eVgFCR5VEOsHmfgBx2UMeWH+/Xh+Ck5E50o3b4l/7qg7/bcNsIjVASZmiAW7y9+g1yIeCtV6UFBYA8blyeArB2mlMLPKNPtcZBvUGfN4FlfxP8QVgRXqVAxP2pFH4DEnxL6/XIgX1N1u0XMxJ8sj156wOzLHESKtShWQ81wJDxYm7qVa3SJvM3QAFzkaT3jlUpVWaFUcbwCy5V3wopgfnZBNzKOg5evNkNT77k1RbQQCqPDIxEPPn4u4kwkCf+ZfgaEwf8OvC+L
+    vuforiaLicenseKey: 
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -43,11 +43,8 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   databaseLoad:
-    dataSetsToLoad:
-    - StonesAndChips
-    - Tarmac
-    dataSetsToActivate:
-    - StonesAndChips
+    dataSetsToLoad: []
+    dataSetsToActivate: []
   videoBackground:
     clippingMode: 0
     matteShader: {fileID: 4800000, guid: f84e93cca971cda47a225f4c6a4156c9, type: 3}
