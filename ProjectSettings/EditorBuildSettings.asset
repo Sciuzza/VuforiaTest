@@ -6,10 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Vuforia-0-Splash.unity
+    path: Assets/SamplesScenes/Vuforia-3-UserDefinedTargets.unity
   - enabled: 1
-    path: Assets/Scenes/Vuforia-1-About.unity
-  - enabled: 1
-    path: Assets/Scenes/Vuforia-2-Loading.unity
-  - enabled: 1
-    path: Assets/Scenes/Vuforia-3-ImageTargets.unity
+    path: Assets/SamplesScenes/Vuforia-1-Menu.unity
