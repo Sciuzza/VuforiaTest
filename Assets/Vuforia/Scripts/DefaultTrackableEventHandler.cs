@@ -15,15 +15,15 @@ namespace Vuforia
                                                 ITrackableEventHandler
     {
         #region PRIVATE_MEMBER_VARIABLES
- 
+
         private TrackableBehaviour mTrackableBehaviour;
-    
+
         #endregion // PRIVATE_MEMBER_VARIABLES
 
 
 
         #region UNTIY_MONOBEHAVIOUR_METHODS
-    
+
         void Start()
         {
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
@@ -43,20 +43,38 @@ namespace Vuforia
         /// Implementation of the ITrackableEventHandler function called when the
         /// tracking state changes.
         /// </summary>
-        public void OnTrackableStateChanged(
-                                        TrackableBehaviour.Status previousStatus,
-                                        TrackableBehaviour.Status newStatus)
+        public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
         {
-            if (newStatus == TrackableBehaviour.Status.DETECTED ||
-                newStatus == TrackableBehaviour.Status.TRACKED ||
-                newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
+            Debug.Log("Previous State is " + previousStatus);
+            Debug.Log("New State is " + newStatus);
+
+            if (previousStatus != TrackableBehaviour.Status.EXTENDED_TRACKED &&
+                previousStatus != TrackableBehaviour.Status.TRACKED)
             {
-                OnTrackingFound();
+                if ((newStatus == TrackableBehaviour.Status.DETECTED ||
+                    newStatus == TrackableBehaviour.Status.TRACKED ||
+                    newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED))
+                {
+                    OnTrackingFound();
+
+                    ObjectTracker tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
+
+                    bool success = tracker.PersistExtendedTracking(true);
+
+                    if (success)
+                    {
+                        Debug.Log("PersistentExtendedTrackingEnabled");
+                    }
+
+                    
+                }
+                else
+                {
+                    OnTrackingLost();
+                }
+
             }
-            else
-            {
-                OnTrackingLost();
-            }
+            
         }
 
         #endregion // PUBLIC_METHODS
