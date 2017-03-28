@@ -1218,7 +1218,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22492410, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.5924
       objectReference: {fileID: 0}
     - target: {fileID: 22492410, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1226,7 +1226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22492410, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 45.1848
       objectReference: {fileID: 0}
     - target: {fileID: 22460726, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1246,7 +1246,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22499394, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 22499394, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1254,7 +1254,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22499394, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 22487896, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1270,7 +1270,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22487896, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 22487896, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1278,7 +1278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22487896, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 40.02083
       objectReference: {fileID: 0}
     - target: {fileID: 22411148, guid: 00ced9c09f12f41a5925c73eeef1bbf2, type: 2}
       propertyPath: m_AnchorMin.y
