@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iD: 0
   monsterName: Magmageddon
-  index: 0
+  index: 101
   firstType: 1
   secondType: 0
   physAttack: 70
@@ -27,9 +27,13 @@ MonoBehaviour:
   manaPerTurn: 5
   totalHP: 180
   description: This is Magmageddon description
-  myModel: {fileID: 100432, guid: afebb0a771cbe884a955a45bb88f8b77, type: 3}
+  myModel: {fileID: 1293700391436518, guid: 2942d4d59966a5a4d80555d317aa83c3, type: 2}
   myPreviewSprite: {fileID: 21300000, guid: 8baeca921d177a242bd833d732f99fd9, type: 3}
-  allLearnableMoves: []
+  allLearnableMoves:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   evolution:
     atLevel: 0
     monster: {fileID: 0}

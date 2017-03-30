@@ -18,6 +18,8 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
     /// </summary>
     public ImageTargetBehaviour ImageTargetTemplate;
 
+
+
     public int LastTargetIndex {
         get { return (mTargetCounter - 1) % MAX_TARGETS; }
     }
@@ -162,6 +164,9 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
 
             // generate a new target:
             mTargetBuildingBehaviour.BuildNewTarget(targetName, ImageTargetTemplate.GetSize().x);
+
+            
+
         }
         else
         {

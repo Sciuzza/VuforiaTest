@@ -48,8 +48,7 @@ namespace Vuforia
             Debug.Log("Previous State is " + previousStatus);
             Debug.Log("New State is " + newStatus);
 
-            if (previousStatus != TrackableBehaviour.Status.EXTENDED_TRACKED &&
-                previousStatus != TrackableBehaviour.Status.TRACKED)
+            if (previousStatus != TrackableBehaviour.Status.EXTENDED_TRACKED)
             {
                 if ((newStatus == TrackableBehaviour.Status.DETECTED ||
                     newStatus == TrackableBehaviour.Status.TRACKED ||

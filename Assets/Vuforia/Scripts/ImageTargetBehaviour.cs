@@ -15,5 +15,13 @@ namespace Vuforia
     /// </summary>
     public class ImageTargetBehaviour : ImageTargetAbstractBehaviour
     {
+
+        public GameObject kitsu, magma;
+
+        private void Awake()
+        {
+            GameObject.FindGameObjectWithTag("GG").GetComponent<SwitchMonster>().kitsuGb = kitsu;
+            GameObject.FindGameObjectWithTag("GG").GetComponent<SwitchMonster>().magmaGb = magma;
+        }
     }
 }

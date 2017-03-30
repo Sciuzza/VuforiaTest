@@ -7,43 +7,40 @@ using UnityEngine;
 public class MonsterScriptable : ScriptableObject
 {
 
-    public int iD;
     public string monsterName;
-
-    //STATS
     public int index;
     public ElementalType firstType;
     public ElementalType secondType;
-    public float physAttack;
-    public float physDefense;
-    public float elementalAttack;
-    public float elementalDefense;
-    public float baseSpeed;
-    public float accuracy;
-    public float elusivity;
-    public int baseMana;
-    public int manaPerTurn;
-    public float totalHP;
-
     public string description;
 
-    //VISUAL
+    #region Stats
+    public int physAttack;
+    public int physDefense;
+    public int elementalAttack;
+    public int elementalDefense;
+    public int baseSpeed;
+    public int accuracy;
+    public int elusivity;
+    public int baseMana;
+    public int manaPerTurn;
+    public int totalHP;
+    #endregion
+
     public GameObject myModel;
-    public Sprite myPreviewSprite;
+    public Sprite myPreviewSprite; 
 
     //MOVES
-    public Move[] allLearnableMoves;
+    public MoveScriptable[] allLearnableMoves;
 
     //EVOLUTION
     [System.Serializable]
     public class Evolution
     {
         public int atLevel;
-        public Monster monster;
+        public MonsterScriptable monster;
     }
 
     public Evolution evolution;
 }
 
 public enum ElementalType : short { normal, fire, water, electro, fairy, grass, fight }
-public enum SkillState : short { notLearnt, learnt, selectedForCombat }

@@ -3,19 +3,36 @@ using System;
 
 public class Monster : MonoBehaviour
 {
+    public MonstersRepo monstersRepo;
+
     public string monsterName;
+    public int index;
+    public ElementalType firstType;
+    public ElementalType secondType;
+    public string description;
 
-    public int iD;
-    public int level;
+    //my own
+    public string playerId;
+    public int id;
+    public int currentHP;
+    public int currentMana;
 
-    public Evolution evolution;
+    //from scriptable/save
+    #region Stats
+    public int physAttack;
+    public int physDefense;
+    public int elementalAttack;
+    public int elementalDefense;
+    public int baseSpeed;
+    public int accuracy;
+    public int elusivity;
+    public int baseMana;
+    public int manaPerTurn;
+    public int totalHP; 
+    #endregion
 
-    [Serializable]
-    public class Evolution
-    {
-        public int level;
-        public Monster monster;
-    }
+    //VISUAL
+    public GameObject myModel;
+    public Sprite myPreviewSprite;
 
-    public Move[] moves;
 }

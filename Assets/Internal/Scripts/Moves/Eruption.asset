@@ -12,20 +12,12 @@ MonoBehaviour:
   m_Name: Eruption
   m_EditorClassIdentifier: 
   moveName: Eruption
-  iD: 102
+  iD: 101
   type: 1
   manaCost: 10
   gesture: 2
   speed: 5
-  precision: 0
+  precision: 10
   power: 0
   isMelee: 0
-  effects:
-  - effectName: Effect (0)
-    type: 0
-    damage: 0
-    valueDamage: 10
-  - effectName: Effect (1)
-    type: 2
-    damage: 1
-    valueDamage: 0
+  effects: []

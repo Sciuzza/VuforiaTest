@@ -11,21 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe27c50d0795cc468495135de3e20bc, type: 3}
   m_Name: Bite
   m_EditorClassIdentifier: 
-  moveName: Bite
-  iD: 101
+  moveName: Wing Attack
+  iD: 102
   type: 0
-  manaCost: 0
-  gesture: 0
-  speed: 0
-  precision: 0
+  manaCost: 2
+  gesture: 3
+  speed: 10
+  precision: 15
   power: 0
   isMelee: 0
-  effects:
-  - effectName: Effect (0)
-    type: 0
-    damage: 0
-    valueDamage: 0
-  - effectName: Effect (1)
-    type: 0
-    damage: 0
-    valueDamage: 0
+  effects: []
